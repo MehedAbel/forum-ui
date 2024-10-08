@@ -29,6 +29,7 @@ const Home = () => {
             })
             .catch((error) => {
                 console.error('Error:', error);
+                console.log("Something went wrong ey!")
             });
     };
 
@@ -38,7 +39,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Home, the URL is: {url}</h1>
+            <h1>Home, the API URL is: {url}</h1>
             <h1>Home, the URL is THERE?</h1>
             <ul>
                 {users.map((user, index) => (
